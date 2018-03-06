@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+}
+
+.wrapper {
+	position: relative;
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+	background:url(../img/bg_green.jpg) no-repeat;
+	background-size: cover;
+	perspective: 1000;
+
+	.res {
+		position: absolute;
+		font-size: 42px;
+		color: #B8B8B8;
+		text-transform: uppercase;
+		right: 1%;
+		bottom: 1%;
+		cursor: pointer;
+	}
+
+	.hide {
+		display: none;
+	}
+	
+	.burg {
+		cursor: pointer;
+		float: left;
+		margin: 4px;
+		display: inline-block;
+
+		.bar1, .bar2, .bar3 {
+			width: 20px;
+			height: 2px;
+			margin: 6px 0;
+			background: #fff;
+			transition: 0.4s;
+		}
+
+		.bar1.change  {
+    		-webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    		transform: rotate(-45deg) translate(-5px, 5px);
+		}
+
+		.bar2.change {
+    		opacity: 0;
+		}
+
+		.bar3.change {
+    		-webkit-transform: rotate(45deg) translate(-5px, -6px);
+    		transform: rotate(45deg) translate(-6px, -6px);
+		}
+	}
+
+	.cards {
+		transform: rotateY(180deg);
+		perspective: 1000;
+		display: flex;
+		position: relative;
+		top: calc(50% - 150px);
+	}
+
+	.playerLength {
+		position: absolute;
+		right: 2%;
+		top: 3%;
+		float: right;
+		display: flex;
+	}
+
+	.player {
+		font-size: 25px;
+		color: #fff;
+		margin: 5px;
+		justify-content: space-between;
+		cursor: pointer;
+		
+	}
+
+	.player:hover {
+		color: #5E68C9;
+	}
+}
+
+.card {
+	justify-content: space-between;
+	position: relative;
+	margin: auto;
+	width: 180px;
+	height: 260px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 5%;
+}
+
+.shirt {
+	background: url(../img/shirt.jpg) no-repeat;
+	background-size: cover;
+}
+
+.c1 {
+	background: url(../img/1.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c2 {
+	background: url(../img/2.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c3 {
+	background: url(../img/3.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c4 {
+	background: url(../img/4.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c5 {
+	background: url(../img/5.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c6 {
+	background: url(../img/6.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c7 {
+	background: url(../img/7.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c8 {
+	background: url(../img/8.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c9 {
+	background: url(../img/9.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c10 {
+	background: url(../img/10.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c11 {
+	background: url(../img/11.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c12 {
+	background: url(../img/12.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.c13 {
+	background: url(../img/13.jpg) no-repeat;
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
