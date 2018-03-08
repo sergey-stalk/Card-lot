@@ -1,3 +1,10 @@
+@mixin cardCSS {
+	background-size: cover;
+	transform: rotateY(180deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
 * {
 	margin: 0;
 }
@@ -7,7 +14,7 @@
 	width: 1000px;
 	height: 600px;
 	margin: 0 auto;
-	background:url(../img/bg_green.jpg) no-repeat;
+	background:url(../img/bg6.jpg) no-repeat;
 	background-size: cover;
 	perspective: 1000;
 
@@ -68,6 +75,15 @@
 		top: 3%;
 		float: right;
 		display: flex;
+
+		.help {
+			font-size: 25px;
+			color: #fff;
+			margin: 5px;
+			margin-left: 20px;
+			cursor: default;
+			opacity: 0.3;
+		}
 	}
 
 	.player {
@@ -102,104 +118,136 @@
 
 .c1 {
 	background: url(../img/1.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c2 {
 	background: url(../img/2.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c3 {
 	background: url(../img/3.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c4 {
 	background: url(../img/4.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c5 {
 	background: url(../img/5.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c6 {
 	background: url(../img/6.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c7 {
 	background: url(../img/7.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c8 {
 	background: url(../img/8.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c9 {
 	background: url(../img/9.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c10 {
 	background: url(../img/10.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c11 {
 	background: url(../img/11.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c12 {
 	background: url(../img/12.jpg) no-repeat;
-	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	@include cardCSS;
 }
 
 .c13 {
 	background: url(../img/13.jpg) no-repeat;
+	@include cardCSS;
+}
+
+.bgGroup {
+	position: relative;
+	bottom: 7%;
+	left: 1%;
+}
+
+@mixin bg {
+	width: 100px;
+	height: 50px;
+	border: 1px solid #c3c3c3;
 	background-size: cover;
-	transform: rotateY(180deg);
-	transition: 0.6s;
-	transform-style: preserve-3d;
+	border-bottom: none;
+}
+
+.bg1 {
+	background: url(../img/bg1.jpg) no-repeat;
+	@include bg;
+}
+.bg2 {
+	background: url(../img/bg2.jpg) no-repeat;
+	@include bg;
+}
+.bg3 {
+	background: url(../img/bg3.jpg) no-repeat;
+	@include bg;
+}
+.bg4 {
+	background: url(../img/bg4.jpg) no-repeat;
+	@include bg;
+}
+.bg5 {
+	background: url(../img/bg5.jpg) no-repeat;
+	@include bg;
+}
+.bg6 {
+	background: url(../img/bg6.jpg) no-repeat;
+	@include bg;
+	border-bottom: 1px solid #c3c3c3;
+}
+
+.bgBurg {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	bottom: 2%;
+	left:3.5%;
+
+
+	.bar1, .bar2, .bar3 {
+		width: 50px;
+		height: 4px;
+		margin: 8px 0;
+		background: #fff;
+		transition: 0.4s;
+	}
+
+	.bar1.change  {
+    	-webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    	transform: rotate(-45deg) translate(-5px, 5px);
+	}
+
+	.bar2.change {
+    	opacity: 0;
+	}
+
+	.bar3.change {
+    	-webkit-transform: rotate(45deg) translate(-5px, -6px);
+    	transform: rotate(45deg) translate(-11px, -11px);
+	}
 }

@@ -91,3 +91,10 @@ $('.res').click(function () {
 	$('.card').removeClass().addClass('card shirt');
 	$('.res').hide('slow');
 });
+
+$('.bg').hide();
+
+$('.bgBurg').click(function () {
+	$('.bgBar').toggleClass('change');
+	$('.bg').slideToggle();
+});
